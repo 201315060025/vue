@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import redirectPage from '@/components/redirectPage'
 import mergeTablePage from '@/components/mergeTablePage'
+import xiaLaTablePage from '@/components/xiaLaTablePage'
 
 
 Vue.use(Router)
@@ -24,6 +25,11 @@ export default new Router({
       path: '/merge-table',
       name: 'mergeTablePage',
       component: mergeTablePage
+    },
+    {
+      path: '/down-table',
+      name: 'xiaLaTablePage',
+      component: xiaLaTablePage
     }
   ]
 })
