@@ -1,7 +1,7 @@
 <template>
 <div>
-  <h1>hell world</h1>
-  <!-- <el-container>
+  <el-row><el-button type="primary" @click="openIndexPage">主要按钮</el-button></el-row>
+  <el-container>
     <el-header>Header</el-header>
     <el-main>Main</el-main>
   </el-container>
@@ -51,7 +51,8 @@
       <el-main>Main</el-main>
       <el-footer>Footer</el-footer>
     </el-container>
-  </el-container> -->
+  </el-container>
+
 </div>
   
 </template>
@@ -66,7 +67,17 @@
     },
     created(){
       console.log("join redirect..");
+    },
+    methods: {
+      openIndexPage(){
+        this.$router.push("/")
+      }
     }
+
+
+
+
+
 
   }
 
