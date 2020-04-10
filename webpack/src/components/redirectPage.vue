@@ -5,17 +5,22 @@
     <el-header>Header</el-header>
     <el-main>Main</el-main>
   </el-container>
+  <br/><br/>
+  <el-divider></el-divider>
 
   <el-container>
     <el-header>Header</el-header>
     <el-main>Main</el-main>
     <el-footer>Footer</el-footer>
   </el-container>
-
+  <br/><br/>
+  <el-divider></el-divider>
   <el-container>
     <el-aside width="200px">Aside</el-aside>
     <el-main>Main</el-main>
   </el-container>
+  <br/><br/>
+  <el-divider></el-divider>
 
   <el-container>
     <el-header>Header</el-header>
@@ -24,7 +29,9 @@
       <el-main>Main</el-main>
     </el-container>
   </el-container>
-
+  <br/><br/>
+  <el-divider></el-divider>
+  
   <el-container>
     <el-header>Header</el-header>
     <el-container>
@@ -35,7 +42,9 @@
       </el-container>
     </el-container>
   </el-container>
-
+  <br/><br/>
+  <el-divider></el-divider>
+  
   <el-container>
     <el-aside width="200px">Aside</el-aside>
     <el-container>
@@ -43,7 +52,9 @@
       <el-main>Main</el-main>
     </el-container>
   </el-container>
-
+  <br/><br/>
+  <el-divider></el-divider>
+  
   <el-container>
     <el-aside width="200px">Aside</el-aside>
     <el-container>
@@ -52,11 +63,14 @@
       <el-footer>Footer</el-footer>
     </el-container>
   </el-container>
-
+  <br/><br/>
+  <el-divider></el-divider>
+  
 </div>
   
 </template>
 <script>
+  import Vue from 'vue';
   export default {
     name: 'redirectPage',
     data(){
@@ -70,15 +84,10 @@
     },
     methods: {
       openIndexPage(){
-        this.$router.push("/")
+        console.log("start output..");
+        this.$router.push('/');
       }
     }
-
-
-
-
-
-
   }
 
 </script>

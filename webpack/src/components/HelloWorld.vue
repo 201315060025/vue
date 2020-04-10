@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <img src="../assets/logo.png">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
@@ -86,6 +87,12 @@
 <script>
 export default {
   name: 'HelloWorld',
+  created(){
+    console.log("this.admin in helloWorld Page", this.admin);
+    console.log("start modify globel field..");
+    this.admin = '123';
+    
+  },
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'

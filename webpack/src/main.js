@@ -5,10 +5,18 @@ import App from './App'
 import router from './router'
 import ElementUI from 'element-ui';
 import locale from 'element-ui/lib/locale/lang/en';
+import { get, post } from "./utils/index";
 
 Vue.use(ElementUI, { locale });
 Vue.config.productionTip = false;
-// Vue.prototype.config = config;
+
+Vue.prototype.$http = {
+  get,
+  post
+};
+
+// 声明全局变量
+Vue.prototype.admin = false;
 
 /* eslint-disable no-new */
 new Vue({

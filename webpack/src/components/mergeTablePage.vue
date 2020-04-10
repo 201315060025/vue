@@ -96,6 +96,9 @@
 
 <script>
   export default {
+    created(){
+      console.log("this.admin in mergeTable Page", this.admin);
+    },
     data() {
       return {
         tableData: [{
