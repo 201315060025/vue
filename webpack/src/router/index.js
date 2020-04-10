@@ -5,6 +5,8 @@ import redirectPage from '@/components/redirectPage'
 import mergeTablePage from '@/components/mergeTablePage'
 import xiaLaTablePage from '@/components/xiaLaTablePage'
 import messageBox from '@/components/messageBox'
+import componentDemo from '@/components/componentDemo'
+// import header from '@/components/comments/header'
 
 
 Vue.use(Router)
@@ -36,6 +38,16 @@ export default new Router({
       path: '/message',
       name: 'messageBox',
       component: messageBox
-    }
+    },
+    {
+      path: '/component',
+      name: 'componentDemo',
+      component: componentDemo
+    },
+    // {
+    //   path: '/header',
+    //   name: 'header',
+    //   component: header
+    // }
   ]
 })

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Vue 测试实例 - 菜鸟教程(runoob.com)</title>
+<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+</head>
+<body>
+<div id="app">
+  <runoob></runoob>
+  <button-counter></button-counter>
+  <button-counter></button-counter>
+  <!-- 每个组件都是独立的.. -->
+  <button-counter></button-counter>
+</div>
+
+<script>
+// 局部组件
+// var Child = {
+//   template: '<h1>this is local component !</h1>'
+// }
+
+// 全局组件 开始
+Vue.component("runoob", {
+  data:{},
+  template: "<h1>this is global component !</h1>"
+})
+
+Vue.component('button-counter', {
+  data: function () {
+    return {
+      count: 0
+    }
+  },
+  template: '<button v-on:click="count++">You clicked me {{ count }} times.</button>'
+})
+
+
+// 创建根实例
+new Vue({
+  el: '#app',
+  // components: {
+  //   'runoob': Child
+  // }
+})
+</script>
+</body>
+</html>
