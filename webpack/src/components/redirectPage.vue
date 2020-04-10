@@ -63,9 +63,13 @@
       <el-footer>Footer</el-footer>
     </el-container>
   </el-container>
+<<<<<<< HEAD
   <br/><br/>
   <el-divider></el-divider>
   
+=======
+
+>>>>>>> 99b63af63971ce242ad7162e4217f348374ee0ac
 </div>
   
 </template>

@@ -3,10 +3,13 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import redirectPage from '@/components/redirectPage'
 import mergeTablePage from '@/components/mergeTablePage'
+<<<<<<< HEAD
 import xiaLaTablePage from '@/components/xiaLaTablePage'
 import messageBox from '@/components/messageBox'
 import componentDemo from '@/components/componentDemo'
 // import header from '@/components/comments/header'
+=======
+>>>>>>> 99b63af63971ce242ad7162e4217f348374ee0ac
 
 
 Vue.use(Router)
