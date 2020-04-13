@@ -14,6 +14,7 @@
       </el-col>
       <el-col :span="2" style="text-align:right;height:60px">
         <el-button v-if="this.showFlag === true" type="primary" @click.native="saveData">Save</el-button>
+        <label>{{this.inputValue}}</label>
       </el-col>
       
     </el-header>
@@ -22,6 +23,9 @@
           <span><b>{{content.id}}</b>  {{content.title}}</span><br/>
       </el-row>
     </el-row>
+    <el-rol>
+      <p><button @click="changeParentName">改变父级的name</button></p>
+    </el-rol>
   </div>
 </template>
 
@@ -38,7 +42,7 @@ export default {
 
     };
   },
-  props: ["labelType", "batchSize", "completeNumber", "dataForSaving", "showFlag", "contentArr"],
+  props: ["labelType", "batchSize", "completeNumber", "dataForSaving", "showFlag", "contentArr", "inputValue"],
   methods: {
     saveData() {
       console.log(this.labelType);
@@ -55,6 +59,9 @@ export default {
     },
     returnMainPage() {
       this.$router.push("/");
+    },
+    changeParentName() {
+            this.$emit('changeParentName', this.inputValue) // 触发一个自定义事件并传参xiaohong
     }
   }
 };
